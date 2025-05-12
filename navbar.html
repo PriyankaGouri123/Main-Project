@@ -1,0 +1,37 @@
+<!-- navbar.html -->
+<nav class="navbar">
+  <div class="logo">
+    <h2>VASTRAA</h2>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="men.html">Men</a></li>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="nav-icons">
+      <span title="Wishlist">🩷</span>
+      <span title="Account">👤</span>
+      <span title="Cart">🛒<span class="cart-badge"></span></span>
+    </div>
+  </div>
+</nav>
+
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+</script>
+
+
+
+
